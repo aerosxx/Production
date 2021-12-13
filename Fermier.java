@@ -54,15 +54,9 @@ public class Fermier
 	
 	public Produit recolter(Producteur p)
 	{
-		if(p instanceof Male)
-		{
-			return tuerAnimal((Male) p);
-		}
-
-		else
-		{
-			return p.produire();
-		}
+		
+		return p.produire();
+		
 		
 	}
 
