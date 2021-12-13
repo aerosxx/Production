@@ -34,7 +34,12 @@ public abstract class Animal implements Producteur
 	{
 		return age;
 	}
-	
+	public void vieillir()
+	{
+		age++;
+		
+	}
+		
 	public boolean getEtat()
 	{
 		return estVivant;
