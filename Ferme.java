@@ -177,8 +177,7 @@ public class Ferme
 			}
 		}
 		
-		champ.enleverCereales();
-		
+
 	}
 
 	
