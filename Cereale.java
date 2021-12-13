@@ -5,12 +5,12 @@ public class Cereale implements Producteur
   	public static final double PRIX_MOYEN_KG= 0.3;
   
   	public double poids;
-	public boolean recolte;	
+
 
 	public Cereale()
 	{
 		this.poids = Math.random()*(POIDS_MAX - POIDS_MIN) +POIDS_MIN  ; 
-		this.recolte=false;
+
 	}
 
 	public String toString()
@@ -26,10 +26,7 @@ public class Cereale implements Producteur
 
 	
 
-	public void estRecolte()
-	{
-		recolte=true;
-	}
+
 	
 	public Produit produire()
 	{
