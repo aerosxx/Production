@@ -164,13 +164,13 @@ public class Ferme
 		return produits.size();
 	}
 
-/*	public void rafraichirFerme()
+	public void rafraichirFerme()
 	{
 			
 		if(champ.estVide() ) champ.remplirChamp();
 		for(Animaux	
 		
-	}*/
+	}
 
 	
 
