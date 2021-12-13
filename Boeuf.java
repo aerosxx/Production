@@ -1,4 +1,4 @@
-public class Boeuf extends Bovin implements Male
+public class Boeuf extends Bovin 
 {
 	
 	public static final double  PRIX_MOYEN_KG = 22;
