@@ -48,23 +48,35 @@ public class Champ
 		return true;
 	}
 
-	public Cereale enleverCereale(int i , int j)
+	public Cereale recolterCereale(Fermier f)
 	{
 		
-		try
+		for(Cereale[] ligne : zone)
 		{
-			Cereale res = zone[i][j];
-			zone[i][j] = null;
-			return res;
+			for(Cereale c : zone)
+			{
+				if(c!=null)
+				{
+					f.recolter(c);
+				}
+			}
 		}
-
-		catch(ArrayIndexOutOfBoundsException e)
-		{
-			return null;		
-		}
-
 		
 		
+	}
+	
+	public Cereale enleverCereales()
+	{
+		for(int i = 0 ; i<LONGUEUR ; i++)
+		{
+			for(int j = 0 ; j<LARGEUR ; j++)
+			{
+				if(zone[i][j].getEtat() ==true)
+				{
+					zone[i][j]=null;
+				}
+			}
+		}
 	}
 
 
