@@ -1,5 +1,5 @@
 
- public class Coq extends Volaille implements Male
+ public class Coq extends Volaille 
  {
 
 
