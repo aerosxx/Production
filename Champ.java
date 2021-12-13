@@ -51,13 +51,14 @@ public class Champ
 	public Cereale recolterCereale(Fermier f)
 	{
 		
-		for(Cereale[] ligne : zone)
+		for(int i=0 ; i<LONGUEUR ; i++)
 		{
-			for(Cereale c : zone)
+			for(int j = 0 ; j<LARGEUR ; j++)
 			{
-				if(c!=null)
+				if(zone[i][j]!=null)
 				{
-					f.recolter(c);
+					f.recolter(zone[i][j]);
+					zone[i][j]=null;
 				}
 			}
 		}
@@ -65,19 +66,6 @@ public class Champ
 		
 	}
 	
-	public Cereale enleverCereales()
-	{
-		for(int i = 0 ; i<LONGUEUR ; i++)
-		{
-			for(int j = 0 ; j<LARGEUR ; j++)
-			{
-				if(zone[i][j].getEtat() ==true)
-				{
-					zone[i][j]=null;
-				}
-			}
-		}
-	}
 
 
 
