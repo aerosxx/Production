@@ -134,8 +134,9 @@ public class Ferme
 		{
 			if(prod.getEtat() )
 			{
-				produits.remove(i);
 				gain+=prod.getPrix();
+				produits.remove(i);
+				
 			}
 		}
 	}
@@ -176,6 +177,8 @@ public class Ferme
 				produits.add(champ.recolterCereale(fermiers[i]));
 			}
 		}
+			else{
+				produits.add(ferme.enleverAnimal
 		
 
 	}
