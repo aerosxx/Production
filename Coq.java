@@ -30,6 +30,7 @@
 	}
 	public Produit produire()
 	{
+		this.estTue();
 		return new Produit(getPoids() , PRIX_MOYEN_KG);
 	}
     
