@@ -26,14 +26,6 @@ public class Fermier
 	}
 
 
-	public Produit tuerAnimal(Male a)
-	{
-
-		a.estTue();
-		return a.produire();
-
-	}
-
 	/*public Cereale recolterCereale(Champ c)
 	{
 		Cereale res = null;
