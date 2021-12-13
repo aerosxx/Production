@@ -168,7 +168,14 @@ public class Ferme
 	{
 			
 		if(champ.estVide() ) champ.remplirChamp();
-		for(Animaux	
+		int nbFermiers = fermiers.length;
+		for(int i = 0 ; i<nbFermiers ; i++)
+		{
+			if(i<nbFermiers/2)
+			{
+				
+			}
+		}
 		
 	}
 
