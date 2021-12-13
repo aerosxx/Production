@@ -175,6 +175,10 @@ public class Ferme
 			{
 				produits.add(champ.recolterCereale(fermiers[i]));
 			}
+			else
+			{
+				int indice = (int)Math.random()*(animaux.size() +1) +1;
+			}
 		}
 		
 
