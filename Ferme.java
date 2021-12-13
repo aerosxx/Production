@@ -173,9 +173,11 @@ public class Ferme
 		{
 			if(i<nbFermiers/2)
 			{
-				
+				produits.add(champ.recolterCereale(fermiers[i]));
 			}
 		}
+		
+		champ.enleverCereales();
 		
 	}
 
